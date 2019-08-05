@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Expenses</string>
+    <string name="app_name">Expenditure</string>
     <string name="editText">details</string>
     <string name="EditText">cost</string>
     <string name="editText2">Total Amount Given</string>
