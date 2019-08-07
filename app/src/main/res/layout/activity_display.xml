@@ -21,6 +21,21 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/total" /> -->
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/editText3"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/total"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
@@ -41,6 +56,7 @@
 
     <EditText
         android:id="@+id/balance"
+        android:focusable="false"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -55,9 +71,9 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="88dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="10dp"
         android:layout_marginRight="32dp"
         android:onClick="updateValues"
         android:text="CHANGE"
@@ -98,28 +114,11 @@
 
         </TableLayout>
     </ScrollView>
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="213dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/editText3"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/total"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button4"
         android:layout_width="37dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="28dp"
         android:text="+"
         android:onClick="updateTotal"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText3"

@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        details=findViewById(R.id.details);
-        cost=findViewById(R.id.cost);
-        food=findViewById(R.id.food);
-        travel=findViewById(R.id.travel);
-        other=findViewById(R.id.other);
+        details=(EditText)findViewById(R.id.details);
+        cost=(EditText)findViewById(R.id.cost);
+        food=(RadioButton)findViewById(R.id.food);
+        travel=(RadioButton)findViewById(R.id.travel);
+        other=(RadioButton)findViewById(R.id.other);
 
         dbHandler=new MyDBHandler(this,null,null,1);
         calender=Calendar.getInstance();
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         Items item=new Items();
         currentCost=Integer.parseInt(cost.getText().toString());
         String currentDetails=details.getText().toString();
-        String currentCause;
+        String currentCause= "";
         item.setCost(currentCost);
         item.setDate(Date);
         item.setDetail(currentDetails);
