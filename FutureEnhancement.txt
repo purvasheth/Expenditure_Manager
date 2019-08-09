@@ -1,0 +1,5 @@
+Add bottom navigation with fragments 
+1)Add Entry
+2)See the list
+3)see a pie chart or some graph. Basic visual analysis
+Further add montly analysis.
