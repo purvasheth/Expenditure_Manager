@@ -57,6 +57,9 @@
     <EditText
         android:id="@+id/balance"
         android:focusable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
